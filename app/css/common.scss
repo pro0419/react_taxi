@@ -1,0 +1,368 @@
+/*Bootstrap Overrides*/
+.form-control {
+  box-shadow: none;
+}
+
+/*Fonts*/
+#app {
+  height: 100%;
+}
+
+
+/* Navbar */
+
+body {
+  font-family: $font-family;
+  font-size: $font-normal;
+  height: 100%;
+}
+
+nav {
+  height: 55px;
+  line-height: 55px;
+  background: $dark-grey;
+}
+
+.navbar-fixed {
+  height: 55px !important;
+}
+
+.content-wrapper {
+  padding-top: 0px; 
+}
+
+.content-container {
+  margin: auto;
+  padding-top: 20px; 
+}
+
+a {
+  color: $dark-grey;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.back-button {
+  display: block;
+  background: url('../images/back-arrow.png');
+  background-size: contain;
+  width: 16px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+.app-logo {
+  font-size: 26px;
+  line-height: 40px;
+  color: $white;
+  padding: 7px 0;
+  margin:0;
+  text-align: center;
+}
+.hamburger-trigger {
+  display: block;
+  text-align: right;
+  margin: -5px 20px 0 0;
+  cursor: pointer;
+}
+.menu-btn-container .icon-bar {
+  background: $white;
+}
+.hamburger-menu-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 55px;
+  right: 0;
+  padding: 30px 0 0;
+  background: $black;
+  opacity: 0.9;
+  display: none;
+}
+.hamburger-show {
+  display: block;
+}
+.hamburger-list {
+  list-style: none;
+}
+.hamburger-list li a{
+  display: block;
+  line-height: 30px;
+  font-size: 24px;
+  text-decoration: none;
+  color: $white;
+  padding-left: 80px;
+}
+
+/* Buttons */
+.btn{
+  /* Currently messing with buttons globally. Might want to think about splitting files with webpack.
+  font-size: 18px;
+  font-weight: 300;
+  padding: 7px;
+  border: 1px solid #B2BABB;
+  border-radius: 5px;
+  text-align: center;
+  height: auto;
+  */
+
+  &.gray-btn {
+    background: #6D6E6E !important;
+    color: $white; 
+    display: block;
+
+    &.disabled {
+      background: #DFDFDF !important;
+    }
+  }
+  &.green-btn {
+    background: #38A103 !important;
+    color: $white; 
+    display: block;
+
+    &.disabled {
+      background: #DFDFDF !important;
+    }
+  }
+  &.yellow-btn {
+    background: $yellow !important;
+    color: $red; 
+    display: block;
+
+    &.disabled {
+      background: #DFDFDF !important;
+    }
+  }
+  &.blue-btn {
+    background: $blue !important;
+    color: $white; 
+    display: block;
+
+    &.disabled {
+      background: #DFDFDF !important;
+    }
+  }
+	&.blue-btn-admin {
+    background: $blue !important;
+    color: $white; 
+
+    &.disabled {
+      background: #DFDFDF !important;
+    }
+  }
+
+  &.red-btn {
+    background: $red !important;
+    color: $white; 
+    display: block;
+
+    &.disabled {
+      background: #DFDFDF !important;
+    }
+  }
+
+}
+
+/* Menu Icon Classes */
+.menu-icon {
+  background-repeat: no-repeat;
+  background-position: 30px center;
+  background-size: contain;
+}
+.login-icon {
+  background-image: url('../images/menu/pswd@3x.png');
+  @extend .menu-icon;
+}
+.find-parking-icon {
+  background-image: url('../images/menu/car_parking@3x.png');
+  @extend .menu-icon;
+}
+.find-vehicle-icon {
+  background-image: url('../images/menu/view@3x.png');
+  @extend .menu-icon;
+}
+.drive-ezly-icon {
+  background-image: url('../images/menu/drive_ezly@3x.png');
+  @extend .menu-icon;
+}
+.other-parking-icon {
+  background-image: url('../images/menu/other_parking_options@3x.png');
+  @extend .menu-icon;
+}
+.my-account-icon {
+  background-image: url('../images/menu/my_account@3x.png');
+  @extend .menu-icon;
+}
+.logout-icon {
+  background-image: url('../images/menu/pswd@3x.png');
+  @extend .menu-icon;
+}
+.driver-view-icon {
+  background-image: url('../images/menu/view@3x.png');
+  @extend .menu-icon;
+}
+.street-parking-icon {
+  background-image: url('../images/menu/view@3x.png');
+  @extend .menu-icon;
+}
+.managed-lot-icon {
+  background-image: url('../images/menu/view@3x.png');
+  @extend .menu-icon;
+}
+.my-vehicles-icon {
+  background-image: url('../images/menu/my_vehicles@3x.png');
+  @extend .menu-icon;
+}
+.my-permits-icon {
+  background-image: url('../images/menu/my_permits@3x.png');
+  @extend .menu-icon;
+}
+.my-wallet-icon {
+  background-image: url('../images/menu/my_wallet@3x.png');
+  @extend .menu-icon;
+}
+.my-locations-icon {
+  background-image: url('../images/menu/car_parking@3x.png');
+  @extend .menu-icon;
+}
+.my-tickets-icon {
+  background-image: url('../images/menu/my_tickets@3x.png');
+  @extend .menu-icon;
+}
+.logout-icon {
+  background-image: url('../images/menu/login_register@3x.png');
+  @extend .menu-icon;
+}
+.back-icon {
+  background-image: url('../images/menu/back-icon@3x.png');
+  @extend .menu-icon;
+}
+.directions-icon {
+  background-image: url('../images/menu/directions@3x.png');
+  @extend .menu-icon;
+}
+.traffic-icon {
+  background-image: url('../images/menu/traffic@3x.png');
+  @extend .menu-icon;
+}
+.transit-icon {
+  background-image: url('../images/menu/transit@3x.png');
+  @extend .menu-icon;
+}
+.nearby-icon {
+  background-image: url('../images/menu/nearby@3x.png');
+  @extend .menu-icon;
+}
+.weather-icon {
+  background-image: url('../images/menu/weather@3x.png');
+  @extend .menu-icon;
+}
+
+
+/* Footer Icon Classes */
+.free-parking {
+  background: url('../images/park@3x.png');
+}
+.paid-parking {
+  background: url('../images/paid_parking@3x.png');
+}
+.managed-parking {
+  background: url('../images/managed@3x.png');
+}
+
+/*Footer*/
+.footer {
+  height: 110px;
+  background: $dark-grey;
+  color: $white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer-row {
+  margin:0px;
+}
+.img-checkbox-icon {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  margin:0 auto;
+}
+.img-checkbox-checked .img-checkbox-icon {
+  opacity: 0.7;
+}
+.img-checkbox-label {
+  font-size: 16px;
+  margin:5px 0;
+}
+.footer-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Field Errors */
+.error-msg {
+  display: none;
+  font-size: 14px;
+}
+
+.has-error {
+  .error-msg {
+    display: block;
+    color: $red;
+    text-align: left;
+  }
+}
+
+/* Alerts */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+/* Spinner */
+.spinner {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('../images/spinner.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.license-no {
+  input {
+    text-transform: uppercase;
+  }
+}

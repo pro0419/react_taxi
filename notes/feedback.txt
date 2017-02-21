@@ -1,0 +1,197 @@
+What is the lot view supposed to be exactly? A view of locations, or a view of a specific lot? To my understanding a lot in the context of the data is a specific parking space, not an entire parking lot. So by lot view are you actually talking about a location? If it's just the views of cars in a lot, what is the difference between that is the car map view?
+
+One issue with this is that a lot of the fake data currently in parked_cars doesn't have lot_row or lot_number data in them, and the ones that do don't have a township_code field filled. But as long as clientside app is inserting data into location_lot properly this might not be a problem. 
+
+What way should the data be displayed visually? The Lot View having parking lot markers on the map and having it link to a different page similar to vehicle view except for lots where it shows which parking spots are and aren't occupied in that lot? 
+
+On the vehicle view, the page when you click the marker should already be displaying the lot row in the menu, but the fake/dummy/placeholder data doesn't have any information on low_row for many of the records.
+
+
+
+
+Was told about location name filter, but how should it be displayed visually? Do you want a page before you open the list view, that lists similar to creating a ticket in vehicle info to select which location you want to view cars in? Do you want a button on the list page which opens a modal with checkboxes and be able to select multiple locations? There are several ways of going about this.
+
+I understand filtering by location name. But what do you mean by category? What else do you want it to be filtered by other than location name/township? (township is fixed now btw, all inspector panels should filter by current township in the next push) Which categories? Here is a list of fields in parked_cars that can be used for filtering: 
+
+'id',
+  'parking_type',
+  'township_code',
+  'location_code',
+  'entry_date_time',
+  'exit_date_time',
+  'expiry_time',
+  'max_time',
+  'user_id',
+  'permit_id',
+  'subscription_id',
+  'plate_no',
+  'pl_state',
+  'lat',
+  'lng',
+  'address1',
+  'address2',
+  'city',
+  'state',
+  'zip',
+  'country',
+  'lot_row',
+  'lot_number',
+  'ip',
+  'parking_token',
+  'parking_status',
+  'payment_method',
+  'parking_rate',
+  'parking_units',
+  'parking_qty',
+  'parking_subtotal',
+  'wallet_trx_id',
+  'tr_percent',
+  'tr_fee',
+  'parking_total',
+  'ipn_custom',
+  'ipn_txn_id',
+  'ipn_payment',
+  'ipn_status',
+  'ipn_address',
+
+
+
+  How do you want to search by plate or phone? 
+
+You mean have a drop down/selectable option at the top of the form to autofill the fields based on what you select (for example while not fully complete, ticket list in inspector panel autofills some fields when you select the violation code / hearing location), or have something like pressing a button and opening a search bar? 
+
+I see where the client is coming from here though. At the moment bursar panel needs a full sweep of refactoring because different apis/forms/payment methods are being added to it, so the bursar panel is the most "broken" at the moment as it's unfinished. Various forms in the township panel and inspector panel needs tweaks as well though. Some of the selectable options I was curious where to get the data from or hat the options were, and sometimes the fake data was not a good indication. 
+
+Regardless, each panel will have it's forms polished one at a time to the best of my knowledge when the bursar panel and inspector panel is feature-complete. 
+
+
+
+
+
+
+
+
+Why was this marked incomplete? The master build from last week should be be using the HTTPS protocol and is currently asking for my location on my local build. Please post the issue, thanks. 
+
+
+
+http://wiki.dreamfactory.com/DreamFactory/Tutorials/Forever_sessions
+
+The alternative solution would be to have the clientside javascript make you re-login upon failed ajax request, and also possibly have the session token expire based on activity (if it isn't already).
+
+At the moment it just appears to be randomly expiring after a set amount of time and failing session token-based ajax requests.
+
+
+
+
+
+
+What is the lot view supposed to be exactly? A view of locations, or a view of a specific lot? To my understanding a lot in the context of the data is a specific parking space, not an entire parking lot. So by lot view are you actually talking about a location? If it's just the views of cars in a lot, what is the difference between that is the car map view? What tables should this be pulling data from, manage_locations or location_lot or something else? Location lot only shows the specific parking space that it has been parked in and the location it's in, which is data already shown in the car map view.
+
+Also one issue with this is that a lot of the fake data currently in parked_cars doesn't have lot_row or lot_number data in them, and the ones that do don't have a township_code field filled. But as long as clientside app is inserting data into location_lot properly this might not be a problem. 
+
+If you mean location instead of lot, then what way should the data be displayed visually? The Lot View having parking lot markers on the map and having it link to a different page similar to vehicle view except for lots where it shows which parking spots are and aren't occupied in that lot? 
+
+On the vehicle view, the page when you click the marker should already be displaying the lot row in the menu, but the fake/dummy/placeholder data doesn't have any information on low_row for many of the records.
+
+
+
+
+
+Is this for the vehicles / car map view? What is meant by "five lists?" Five different types cars than can be enabled or disabled? What are blue cars for, expired cars which have recently been ticketed? Plates that have ever been ticketed before? Does 5 lists mean five different types of car markers that can be enabled or disabled? If so, what is the fifth. From my understanding it's 
+
+Normal parked cars - green
+Expiring cars - yellow
+Expired cars - red
+Ticketed cars - blue
+
+So if five lists means 5 different car types, what is the fifth? Or are there 4? And am I correct in assuming ticketed cars are blue cars?
+
+Or is this for the list view? If so, not sure why car colors were mentioned.
+
+
+
+
+
+Not sure what you mean by inspector view of the counter. Do you mean link it to the inspector list view, or something else? At the moment it's linked to the same vehicle info page that the map view is using.
+
+I need to make changes to the search plate page regardless because at the moment it is poorly designed because it is grabbing all parked cars and filtering them clientside, so  it's very slow at the moment. It would be much faster if I did a backend SQL query based on the search and then either displayed the results on the bottom of the page with the search bar on top, or had a loading bar and take you to a page of results you can choose from. 
+
+
+
+
+
+
+Should this option show up before you select which type of payment, ie ticket payments, wallet payments in the bursar panel, or after you select them?
+
+What is the difference between receive payments and receive payments at bursar desk. Won't the bursar desk be receiving cash, check and card payments? If so, what are "receive payments" for? Also for cards, you can enter the information manually and use paypal merchant services, but if they are using an external terminal, where will the card and transaction information be exposed? From my understanding, there are many different brands of terminals/card readers.
+
+
+
+
+
+
+I could use more specifics on how the client wants this view to be designed. Where do you want to be able to choose these options? 
+
+If you want a separate page for the logs (I'm assuming, instead of within each category page), Do you want some kind of calendar date range selector? Do you want to be able to download CSV / PDF versions of the payment logs? 
+
+Do you want the payment logs to be selected from the bursar panel menu or from within the the different pages like ticket payment, permit payment, ect.
+
+I think it would make the most sense to make it it's own page that you can click from the bursar panel and just have a drop down selector at the top like:
+
+All
+Wallet
+Ticket
+Parking
+Permit
+
+And have it default to all rather than having tiles choosing between receiving payments and looking at the logs after you click ticket payment for example.  
+
+
+
+Okay will do. Need feedback for new search plate design though as the current setup is not very good, as I mentioned in the other comment. Whether it should take you to a separate page to show you the search results or show you under, because there may be more than one result matching a plate, ect. 
+
+
+
+
+
+Okay, will do. I noticed in the list view this is lacking as well at the moment.
+
+But do you mean in the map view vehicle info create ticket as well? With the mobile interface? Add it there too? 
+
+I think that for the mobile interface on map view, instead of instantly creating a ticket, it should take you to the list view when you press "create ticket" and open the modal with all of the fields prefilled, because at the moment hearing location + violation type is not enough to fill all the fields in the ticket record.
+
+
+
+
+I can do that as well, but also please keep in mind as I mentioned in my previous comment:
+
+I think that for the mobile interface on map view, instead of instantly creating a ticket, it should take you to the list view when you press "create ticket" and open the modal with all of the fields prefilled, because at the moment hearing location + violation type is not enough to fill all the fields in the ticket record.
+
+The change I suggested is not necessary as long as you don't mind that all the fields not being filled, because hearing location + violation type does not hold all the data to fill all fields.
+
+
+
+Not sure what this change is referring to at all. What page is it referring to and what does the client mean by Farmingdale is not added to the db? Please give clarification.
+
+
+
+
+This isn't covered in locations permit rate table under township panel > permits?
+
+if it's different, where do I find the records for parking rates in in the dreamfactory DB? 
+
+
+
+
+User specific admin panels as in showing panels based on your admin role? Already working.
+
+Unless you mean within the Township Panel different roles too, in which case I could use more clarification.
+
+As far as Next court_Date_time for hearing info, just fixed that on my local build.
+
+
+
+
+
+Where should this be? What are some examples of information they'll be entering? Will the Google Partners API need to be used?

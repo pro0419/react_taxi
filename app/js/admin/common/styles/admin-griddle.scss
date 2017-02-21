@@ -1,0 +1,103 @@
+/* Griddle */
+.griddle .top-section {
+    display: table;
+    width: 100%;
+}
+
+.griddle .top-section {
+    margin-bottom: 10px;
+    display: table;
+    width: 100%;
+}
+
+.griddle .griddle-filter {
+    margin-left: 20px;
+    float: left;
+    width: 400px;
+    margin-bottom:10px;
+}
+
+
+.griddle .griddle-settings-toggle {
+    float:right;
+    margin-right: 20px;
+    margin-top: 15px;
+    width:50%;
+    text-align:right;
+}
+
+.griddle .griddle-settings {
+    background-color: #FFF;
+    border:1px solid  #DDD;
+    color: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.griddle .griddle-settings .griddle-columns {
+    clear: both;
+    display: table;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.griddle .griddle-settings .griddle-column-selection {
+    float: left;
+    width: 20%;
+    margin-top: 0px;
+}
+
+.griddle .griddle-settings select {
+    padding: 6px 12px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    height: 30px;
+    line-height: 30px;
+}
+
+.griddle table {
+    width:100%;
+    table-layout: auto;
+}
+
+/* background-color: #EDEDEF */
+.griddle th {
+    background-color: #fbfafa;
+    border: 0px;
+    color: #38332e;
+    padding: 5px;
+}
+
+/* background-color: #EDEDEF */
+.griddle .footer-container {
+}
+
+.griddle .footer-container .paginate-info {
+    float: left!important;
+    padding-left: 30px
+}
+
+.griddle .footer-container .paginate {
+    float: right!important;
+    padding-right: 30px
+}
+
+.griddle .griddle-page {
+    text-align:center;
+}
+
+
+
+.griddle-column-selection span {
+  margin-left: 10px;
+}

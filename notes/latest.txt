@@ -1,0 +1,60 @@
+Township Panel:
+
+Inspector Panel:
+When ticket submitted, show ticket data in a modal from return data.
+Ticket notification.
+Create ticket in mobile map view not working?
+
+Bursar Panel:
+Receive Payments
+
+Registration:
+Registered users need session authentication after finishing registration otherwise it won't have the role_id.
+
+Menu:
+Back to parkezly sets to registeredusers
+
+Generic List:
+When wrong search input for search type, return no items match this search.
+Improve lazy loading functionality to go back.
+
+ComponentFunction for selectize components (IE: User ID for Email for Township Users)
+
+User Management two levels
+1. Super Admin level ( i think that is the one we have now ) 
+View: Profiles and USers
+Search : By ID, username, Phone Number, Plate#, Twp ID 
+Action: /Add/Changes Users and their profiles
+---------------------------------------------------------------
+2. Townships Admin Level  Screen purposes:
+Users>
+      i) To see the staff users who have IDs for townships in parkezly admin roles
+      ii) Users registered with townships for Permits . 
+       They can also make payments for permits, tickets and wallet ( and parking). 
+  Search features for user : By ID, username, Phone Number, Plate#
+  To be shown , their phone number, and plate#s , profile in the listing 
+   And in details: Email address, address, vehicles, permits, tickets
+   Actions possible Change Status : ACTIVE/INACTIVE/Change for For Staff Profile 
+                                    ADD/REMOVE VEHICLES for users profile
+                                    ADD/REMOVE PERMITS  for users profile
+           
+   ----------------------------------------
+   
+   Bursar Admin
+    > Make Payment for Wallet
+    > Search for a user by Phone number or Plate#, username, Wallet#
+      Shows, the Wallet ( debits and credits ) > Add Amount 
+==========================================================   
+   Bursar Admin
+    > Make Payment for Ticket
+    > Search for a user by Ticket#,  Plate#, username, Phone number
+      Shows tickets > Pay ( if not paid) 
+   ======================================================
+Bursar Admin
+    > Make Payment for Permits
+    > Search for a user by Permi#,  Plate#, username, Phone number
+      Shows Approved Permits > Pay ( if not paid)
+
+
+
+      twpadmin@parkezlytest.com

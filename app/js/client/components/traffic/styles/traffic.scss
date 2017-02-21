@@ -1,0 +1,19 @@
+@import "../../../../../css/variables.scss";
+.nearby-content {
+  top: 56px;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  background: $white;
+  padding: 0 0 15px;
+}
+.my-location-marker {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	background: url('../../../../../images/my-location.png');
+	background-size: contain;
+	cursor: pointer;
+}

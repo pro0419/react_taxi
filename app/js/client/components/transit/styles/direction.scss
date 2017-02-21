@@ -1,0 +1,32 @@
+@import "../../../../../css/variables.scss";
+.direction-content {
+  width: 50%;
+  height: 350px;
+  z-index: 2;
+  text-align: center;
+  background: $white;
+  padding: 0 0 15px;
+  display: inline;
+  float: left;
+}
+.direction-panel {
+  width: 50%;
+  height: 350px;
+  overflow-x: scroll;
+  z-index: 2;
+  text-align: center;
+  background: $white;
+  padding: 15px;
+  display: inline;
+  float: left;
+}
+.direction-map {
+  width: 100%;
+  top: 350px;
+  height: 500px;
+  position: absolute;
+}
+.direction-confirmation {
+	width: 400px;
+	margin: 20px auto;
+}

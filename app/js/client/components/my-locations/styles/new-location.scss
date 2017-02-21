@@ -1,0 +1,51 @@
+.new-location {
+    width : 100%;
+    margin: 0 auto;
+    padding: 0 20px 200px;
+
+    @media (min-width: $screen-sm-min) {
+        width: 500px;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .addShowBtns {
+        text-align: center;
+    }
+
+    .toolBtn.active {
+        padding: 5px;
+        border: 1px solid $light-grey;
+        background-color: lightblue;
+        text-align: center;
+    }
+    .toolBtn {
+        padding: 5px;
+        border: 1px solid $light-grey;
+        text-align: center;
+    }
+    .row {
+        margin: 0 0 0 0;
+    }
+    .newLocation {
+        margin-top: 50px;
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+    .search-bar-input{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .search-bar-submit {
+        zoom:150%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 5px;
+    }
+    .addBtn{
+        width: 100%;
+        text-align: center;
+    }
+}

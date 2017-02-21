@@ -1,0 +1,41 @@
+.locations-list {
+  width : 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    width: 460px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+  .row {
+    &>div {
+      padding: 15px;
+      border-bottom: 1px solid $light-grey;
+      border-radius: 5px;
+      &:hover {
+        background: $light-grey;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 14x;
+      }
+    }
+  }
+  .toolBtn.active {
+      padding: 5px;
+      border: 1px solid $light-grey;
+      background-color: lightblue;
+  }
+  .toolBtn {
+      padding: 5px;
+      border: 1px solid $light-grey;
+  }
+
+  .newLocation {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,94 @@
+.sign-in-root {
+  padding-top: 100px;
+  margin-top: -55px;
+  height: 100%;
+  background-color: #3C4E5A;
+}
+
+.sign-in-content {
+  width : 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  background: rgba(255, 255, 255, 0.70);
+  border-radius: 4px;
+
+  @media (min-width: $screen-sm-min) {
+    width: 500px;
+  }
+
+  .welcome {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  .form-signin {
+    margin-top: 25px;
+
+    .input-field {
+      
+    }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input[type="email"] {
+      background: url('../images/user@3x.png');
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: 32px;
+      padding-left: 55px;
+    }
+
+    input[type="password"] {
+      background: url('../images/password@3x.png');
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: 32px;
+      padding-left: 55px;
+    }
+  }
+
+  .forgot-password {
+    text-align: right;
+    font-size: 16px;
+    margin: 15px 0 20px;
+  }
+
+  .skip-link {
+    margin: 30px 0 0;
+    text-align: center;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $dark-grey;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $dark-grey;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $dark-grey;
+  }
+
+  :-ms-input-placeholder {  
+    color: $dark-grey;
+  }
+
+  .react-selectize {
+    &.root-node {
+      width: auto;
+    }
+  }
+
+  .help-text {
+    font-size: 12px;
+  }
+
+  .continue-registration {
+    text-align: right;
+    font-size: 22px;
+    padding: 10px;
+  }
+}

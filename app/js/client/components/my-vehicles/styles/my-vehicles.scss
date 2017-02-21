@@ -1,0 +1,44 @@
+.new-vehicle-content {
+  width : 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+
+  @media (min-width: $screen-sm-min) {
+    width: 500px;
+  }
+
+  input {
+    box-sizing: border-box;
+  }
+
+  .license-no input {
+    background: url('../images/ride@3x.png');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 32px;
+    padding-left: 55px;
+  }
+
+  .new-vehicle-actions {
+    margin: 50px 0 0 0;
+  }
+
+  .skip-link {
+    margin: 15px 0 0;
+    text-align: right;
+  }
+  .right-btn {
+    text-align: right;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .form-new-vehicle {
+    .react-selectize {
+      &.root-node {
+        width: auto;
+      }
+    }
+
+  }
+}

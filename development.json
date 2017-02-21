@@ -1,0 +1,8 @@
+{  
+  "uid": "app",
+  "append": true,
+  "watch": true,
+  "script": "server-wrapper.js",
+  "sourceDir": "./",
+  "args": ["NODE_ENV=production", "PORT=80"]
+}

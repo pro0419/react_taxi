@@ -1,0 +1,424 @@
+.blue-body {
+  background-color: #3C4E5A;
+  min-height: 120%;
+}
+
+.admin-parking-modal {
+  width: 500px;
+  left: 0;
+  right: 0;
+  top: 60px;
+  margin: 0 auto;
+  z-index: 999;
+  background: $white;
+  padding: 20px 20px 15px 20px;
+  border: 1px solid $black;
+  border-radius: 8px;
+  text-align: center;
+
+  .heading {
+    border-bottom: 1px solid $black;
+    padding: 0 0 10px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .parking-details {
+    text-align: left;
+    font-size: 16px;
+    > div {
+      padding: 0 0 5px 0;
+    }
+    .link {
+      text-align: center;
+      margin: 15px 0;
+
+      a {
+        color: $link;
+        font-size: 18px;
+      }
+    }
+    .lot-link {
+      margin: 5px 0;
+      text-align: center;
+
+      a {
+        color: $link;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .close-btn {
+    cursor: pointer;
+    background: url('../images/cross-black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  .car-list {
+    min-height: 240px;
+    padding: 0 20px;
+    .car {
+      width: 80px;
+      float: left;
+      margin-bottom: 10px;
+    }
+  }
+  .car-icon {
+    &.occupied {
+      background-image: url('../images/ride@3x.png');
+    }
+    &.available {
+      background-image: url('../images/popup_car_red@3x.png');
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+  }
+  .lot-number {
+    font-size: 14px;
+    text-align: center;
+  }
+  .park-here-btn {
+    margin: 15px 0;
+  }
+
+  .plate-list {
+    max-height: 315px;
+    overflow-y: auto;
+
+    .plate {
+      border-bottom: 1px solid $light-grey;
+      padding: 5px 0;
+
+      &.even {
+        background: $lighter-grey;
+      }
+    }
+  }
+
+  .react-selectize {
+    &.root-node {
+      width: 100%;
+    }
+  }
+
+  .react-selectize {
+    &.root-node {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.search {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.form-required {
+  color: red;
+}
+
+.dropzone-fix {
+	display: inline-block !important;
+	border-style: dashed;
+}
+
+.township-details-image {
+  height: 256 !important; 
+  width: 256 !important;
+  position: "relative" !important;
+  right: 0px !important;
+  display: block !important;
+  margin-left: auto !important;
+}
+
+.image-upload-button {
+  color: #fff;
+  position: absolute;
+  bottom: 20;
+  right: 24;
+  z-index: 1 !important;
+}
+
+
+.image-upload-text {
+  background-color: rgba(45, 182, 61, 0.3);
+  padding: 5px;
+}
+
+.image-upload-crop {
+  border: 1px solid green;
+}
+
+.uploader-wrapper {
+  height: 4000px !important;
+}
+
+.tab-bar {
+  position: fixed;
+  z-index: 50;
+  margin-top: 52px;
+  height: 40px;
+  line-height: 38px !important;
+  margin-right: 5px !important;
+}
+
+.tab-bar-icons {
+  line-height: 38px !important;
+  margin-right: 5px !important;
+  font-size: 20px !important;
+}
+
+.tab-bar-link {
+  height: 38px !important;
+}
+
+.township-content-width {
+  min-width: 300px;
+  max-width: 1400px;
+  margin-top: 10px;
+}
+
+
+.township-userlist-container {
+  min-height: 0px;
+  overflow-x: auto !important;
+  
+  cursor: pointer;
+  background-color: #FFF;
+
+}
+
+.bursar-payment-container {
+  min-height: 0px;
+  overflow-x: auto !important;
+
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+.township-permitrequests-container {
+  min-height: 0px;
+  overflow-x: auto !important;
+  cursor: pointer;
+  background-color: #FFF;
+
+}
+
+.township-list-container {
+  min-height: 0px;
+  max-height: 545px;
+  overflow-y: auto;
+  cursor: pointer;
+  background-color: #FFF;
+
+}
+
+.township-details-container {
+  min-height: 100px;
+  max-height: 280px;
+  overflow-y: scroll;
+}
+
+.township-edit-container {
+  min-height: 100px;
+  max-height: 325px;
+  overflow-y: scroll;
+}
+
+.admin-card-panel {
+  min-height: 600px;
+  max-height: 600px;
+  width: 100%;
+}
+
+.admin-circle {
+  width: 50px;
+  height: 50px;
+}
+/* old #2DB63D */
+.btn-green {
+  background-color: #0ADC3D !important;
+}
+
+.btn-green:hover {
+  color: #FFF;
+  background-color: #0ADC3D !important;
+}
+
+.btn-yellow {
+  background-color: #EAB41C !important;
+}
+
+.btn-yellow:hover {
+  color: #FFF;
+  background-color: #EAB41C !important;
+}
+
+.btn-red {
+  background-color: #D9534F !important;
+}
+
+.btn-red:hover {
+  color: #FFF;
+  background-color: #D9534F !important;
+}
+
+.admin-tile {
+  height: 175px;
+  width: 440px;
+  background-color: #64b5f6;
+  margin-bottom: 30px;
+  border-radius: 50px !important;
+}
+
+.admin-tile:hover {
+  background-color: #64b5f6;
+}
+
+
+.admin-tile i {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 100px;
+}
+
+.admin-tile h4 {
+  font-weight: bold;
+  text-transform: none;
+}
+
+.edit-tile {
+  height: 100px;
+  width: 300px;
+  background-color: #64b5f6;
+  margin-bottom: 30px;
+  border-radius: 25px !important;
+}
+
+.edit-tile:hover {
+  background-color: #64b5f6;
+}
+
+
+.edit-tile i {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    font-size: 60px;
+}
+
+.edit-tile p {
+  margin-top: 25px;
+  padding-right: 60px !important;
+  font-size: 30px;
+  //font-weight: bold;
+  text-transform: none;
+}
+
+.collection a.collection-item{
+  color: #3F3333;
+}
+
+.card-title {
+  font-size: 50 !important;
+  width: calc(100% - 256px) !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+}
+
+.marginless-row {
+  margin: 0px;
+}
+
+.input:focus {
+  border: 0px !important;
+  box-shadow: 0px !important;
+}
+
+input:not([type]):focus:not([readonly]), 
+input[type=text]:focus:not([readonly]), 
+input[type=password]:focus:not([readonly]), 
+input[type=email]:focus:not([readonly]), 
+input[type=url]:focus:not([readonly]), 
+input[type=time]:focus:not([readonly]), 
+input[type=date]:focus:not([readonly]), 
+input[type=datetime]:focus:not([readonly]), 
+input[type=datetime-local]:focus:not([readonly]), 
+input[type=tel]:focus:not([readonly]), 
+input[type=number]:focus:not([readonly]), 
+input[type=search]:focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly]) {
+  box-shadow: 0 0px 0 0 #FFF !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.flex-important {
+  display: flex !important;
+}
+
+.admin-form-input {
+  min-width: 300px !important;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.img-checkbox-icon {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  margin:0 auto;
+}
+.img-checkbox-checked .img-checkbox-icon {
+  opacity: 0.7;
+}
+.img-checkbox-label {
+  font-size: 16px;
+  margin:5px 0;
+}
+.footer-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal .modal-footer{
+  overflow-x: hidden !important;
+}
+
+div {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.bounceOut {
+  animation-name: bounceOut;
+}
+
+.rw-input {
+  border: none !important;
+      margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 10px !important;
+}

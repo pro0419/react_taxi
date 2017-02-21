@@ -1,0 +1,80 @@
+- Dreamfactory -
+username: bgolson@gmail.com 
+password: dream2212
+
+http://54.83.189.72/dreamfactory/dist/index.html#/login
+
+- Dreamfactory Scripts - 
+if (event.request.payload) { 
+    event.request.payload = {"resource": [event.request.payload]};
+}
+
+Create credit card
+Save credit card
+Pay with saved credit card
+
+twpinspector@parkezly.com    secret
+twpbursar@parkezly.com   secret
+twpadmin@parkezly.com   secret
+jdoe@example.com   secret
+
+Session return data:
+
+{
+    email: "Twpinspector@parkezly.com",
+    first_name: "Twpinspector",
+    host: "ip-172-31-3-129",
+    id: 5,
+    is_sys_admin: false,
+    last_login_date: "2016-11-04 14:43:38",
+    last_name: "Twpinspector",
+    name: "Twpinspector Twpinspector",
+    role: "ApiAdmin",
+    role_id: 1,
+    session_id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUsInVzZXJfaWQiOjUsImVtYWlsIjoiVHdwaW5zcGVjdG9yQHBhcmtlemx5LmNvbSIsImZvcmV2ZXIiOmZhbHNlLCJpc3MiOiJodHRwOlwvXC81NC44My4xODkuNzJcL2FwaVwvdjJcL3VzZXJcL3Nlc3Npb24iLCJpYXQiOjE0NzgyNzA2MTgsImV4cCI6MTQ3ODI3NDIxOCwibmJmIjoxNDc4MjcwNjE4LCJqdGkiOiIyNzYzZTYzMzMxYmY1MWE2YTI1ZjY4MDAzZDM1OTg5MCJ9.FmUjw6eeKzhj9WRHrD_v3XOUFxMZZFWc08LdsmGQKHY"
+    session_token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUsInVzZXJfaWQiOjUsImVtYWlsIjoiVHdwaW5zcGVjdG9yQHBhcmtlemx5LmNvbSIsImZvcmV2ZXIiOmZhbHNlLCJpc3MiOiJodHRwOlwvXC81NC44My4xODkuNzJcL2FwaVwvdjJcL3VzZXJcL3Nlc3Npb24iLCJpYXQiOjE0NzgyNzA2MTgsImV4cCI6MTQ3ODI3NDIxOCwibmJmIjoxNDc4MjcwNjE4LCJqdGkiOiIyNzYzZTYzMzMxYmY1MWE2YTI1ZjY4MDAzZDM1OTg5MCJ9.FmUjw6eeKzhj9WRHrD_v3XOUFxMZZFWc08LdsmGQKHY"
+}
+
+getUserPrivledge needs sessionToken that doesn't exist yet.
+/user/session should not be returning user_id in user_profile by id from user_profile instead.
+
+authUser should be happening on register as well
+
+
+1. Right now, for Insert/Editing/or Viewing it pulls all fields from the table.  Needs logic applied based on what we are doing there. 
+For example, when adding money to the wallet, search by plate # or phone# and pull that person's wallet and add. 
+
+2. Many fields on each form need to be hidden.; Some fields must be drop down/cascading
+
+3. For Inspector Panel >  Two Tiles first: 
+i) Lot/Map View ; 
+ii) List View 
+ii) Search Plate#
+ i) Three Views ( Lot View, Map View of a a location,  Map view of the township>  and 
+ ii)Five Lists >  Expired Cars, Expiring Cars, Green Cars, Blue Cars, Ticketed Cars 
+
+4. For Bursar Panel 
+Three Tiles: 
+i ) Recieve Payments,  
+ii) Payments Received at Bursar Desk,
+iii ) Payments from web/app
+ 
+ ii) & iii) are reports, which can be pulled as  daily, weekly, monthly etc.  
+ 
+6. Ui forms for Google Place Partners and Local Partners to enter their data.
+
+sudo git pull https://TroyEdwardsJr@bitbucket.org/parkezlyweb/parkezlyweb.git master
+
+iii) List View from Category Search ( Categories: Expired, Expiring, Valid, Non_Validated) 
+iv) List View from Location Search ( An inspector can search for a location under his jurisdiction and see all parked cars. 
+The other two links for Inspector's dashboard are :
+
+{(() => {})()}
+
+Object.assign doesn't work in IE. Replace with lodash.
+
+blue lighten-2
+
+ssh -i BitnamiNodeJsKeyPair.pem.txt bitnami@52.91.29.108
+
+// New branch.

@@ -1,0 +1,32 @@
+.tickets-list {
+  width : 100%;
+  margin: 0 auto;
+  padding: 0 20px 200px;
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    width: 500px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+  .row {
+    &>div {
+      padding: 15px;
+      border-bottom: 1px solid $light-grey;
+      border-radius: 5px;
+      &:hover {
+        background: $light-grey;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 14x;
+      }
+    }
+  }
+  .ticket-modal-container {
+    cursor: pointer;
+  }
+}
